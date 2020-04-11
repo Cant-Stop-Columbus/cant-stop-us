@@ -14,9 +14,10 @@ const theme = createMuiTheme({
       main: red.A400,
     },
     background: {
-      default: '#fff',
+      default: '#FFF',
     },
   },
+  spacing: 8,
 });
 
 export default theme;
