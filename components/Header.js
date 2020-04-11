@@ -1,14 +1,5 @@
-import Link from './Link';
-
-const linkStyle = {
-  marginRight: 15
-};
-
 const Header = () => (
-  <div>
-    <Link href="/">
-      <a style={linkStyle}>Home</a>
-    </Link>
+  <div style={{height:"3px", backgroundColor:"red", width:"100%", zIndex:"2000"}}>
   </div>
 );
 

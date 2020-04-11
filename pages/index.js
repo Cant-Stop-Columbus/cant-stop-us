@@ -2,10 +2,12 @@ import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
 import { Button } from '@material-ui/core'
 import Link from '@material-ui/core/Link'
+import Header from '../components/Header';
 
 export default function Index() {
   return (
     <>
+      <Header/>
       <Container maxWidth="lg">
         <Typography variant="h4" align="center">
           Can't Stop Us Toolkit
