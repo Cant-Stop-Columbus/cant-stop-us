@@ -11,7 +11,6 @@ export default class MyDocument extends Document {
       <Html lang="en">
         {/* Default configuration for meta tags */}
         <Head/>
-        <Meta/>
         <body>
           <Main />
           <NextScript />

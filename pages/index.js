@@ -5,10 +5,12 @@ import { Button } from '@material-ui/core'
 import Link from '@material-ui/core/Link'
 import Header from '../components/Header';
 import Map from '../components/Map'
+import Meta from '../components/Meta'
 
 export default function Index() {
   return (
     <>
+      <Meta/>
       <Header/>
       <Container maxWidth="md">
         <Box mt={2}>

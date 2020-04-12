@@ -11,7 +11,7 @@ export default function Index() {
     <>
       <Meta 
         title="Can't Stop Us Toolkit" 
-        desc="The Can't Stop Us toolkit is a structure that helps you to launch a successful covid-19 response in your city.",
+        desc="The Can't Stop Us toolkit is a structure that helps you to launch a successful covid-19 response in your city."
         url="https://cantstop-us.com/toolkit"
       />
       <Header/>

@@ -24,9 +24,6 @@ export default function MyApp(props) {
 
   return (
     <React.Fragment>
-      {/* Default configuration for meta tags */}
-      <Meta/>
-
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
