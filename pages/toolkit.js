@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography'
 import { Button } from '@material-ui/core'
 import Link from '@material-ui/core/Link'
 import Header from '../components/Header';
+import Footer from '../components/Footer'
 import Meta from '../components/Meta'
 
 export default function Index() {
@@ -38,6 +39,7 @@ export default function Index() {
             </Button>
           </Box>
         </Box>
+        <Footer/>
       </Container>
     </>
   );
