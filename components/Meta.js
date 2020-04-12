@@ -62,7 +62,7 @@ Meta.propTypes = {
 
 Meta.defaultProps = {
   title: "Can't Stop Us",
-  desc: "Can't Stop Us is a nationwide movement sparked in response to the covid-19 situation.",
+  desc: "Can't Stop Us is a grassroots, community-focused nationwide movement in response to the COVID-19 crisis.",
   url: "https://cantstop-us.com"
 }
 

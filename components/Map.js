@@ -57,7 +57,7 @@ const Map = () => {
             <text
               textAnchor="middle"
               y={markerOffset}
-              style={{ fontFamily: "system-ui", fill: "#5D5A6D" }}
+              style={{ fontFamily: "system-ui", fill: "#404040" }}
             >
               {name}
             </text>

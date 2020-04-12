@@ -18,7 +18,7 @@ export default function Index() {
             Can't Stop Us
           </Typography>
           <Typography variant="body1" gutterBottom={true} align="center">
-            Can’t Stop Us is a nationwide movement that activates our unique talents and compassion to solve real problems. We embrace courageous ideas and rapidly deliver new and innovative solutions.
+            Can’t Stop Us is community-focused nationwide movement that activates our unique talents and compassion to solve real problems. We embrace courageous ideas and rapidly deliver new and innovative solutions.
           </Typography>
           <Container maxWidth="sm">
             <Map />
