@@ -12,7 +12,7 @@ const Meta = (props) => (
     <meta name="og:title" property="og:title" content={props.title} />
     <meta name="og:description" property="og:description" content={props.desc} />
     <meta property="og:site_name" content="Can't Stop Us" />
-    <meta property="og:url" content={`${props.url}`} />  
+    <meta property="og:url" content={props.url} />  
     {props.image && <meta property="og:image" content={`${props.image}`} /> } 
 
     <meta name="twitter:card" content="summary" /> 

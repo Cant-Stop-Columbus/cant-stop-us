@@ -4,10 +4,16 @@ import Typography from '@material-ui/core/Typography'
 import { Button } from '@material-ui/core'
 import Link from '@material-ui/core/Link'
 import Header from '../components/Header';
+import Meta from '../components/Meta'
 
 export default function Index() {
   return (
     <>
+      <Meta 
+        title="Can't Stop Us Toolkit" 
+        desc="The Can't Stop Us toolkit is a structure that helps you to launch a successful covid-19 response in your city.",
+        url="https://cantstop-us.com/toolkit"
+      />
       <Header/>
       <Container maxWidth="md">
         <Box mt={2}>
