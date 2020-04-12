@@ -15,10 +15,10 @@ export default function Index() {
             Can't Stop Us Toolkit
           </Typography>
           <Typography variant="h5">
-            The purpose of this toolkit is:
+            We built this toolkit:
           </Typography>
           <Typography variant="body1">
-            <b>To help</b> other communities kickstart support movements like Can’t Stop Columbus
+            <b>To help</b> other communities kickstart support movements like <Link href="https://cantstopcolumbus.com">Can’t Stop Columbus</Link>
           </Typography>
           <Typography variant="body1">
             <b>To empower</b>  organizers to inspire an attitude of help and support
@@ -26,9 +26,11 @@ export default function Index() {
           <Typography variant="body1" gutterBottom={true}>
             <b>To provide</b>  a structure for creating a movement by sharing tools, insights, successes, and failures
           </Typography>
-          <Button variant="contained" color="primary" component={Link} href="https://docs.google.com/document/d/1H72twsb5stdXdGf3Gl0oO7fsPYhU9ZLKEr1-jQiX2iU/edit?usp=sharing">
-            Open the Toolkit
-          </Button>
+          <Box align="center" mt={2}>
+            <Button variant="contained" color="primary" component={Link} href="https://docs.google.com/document/d/1H72twsb5stdXdGf3Gl0oO7fsPYhU9ZLKEr1-jQiX2iU/edit?usp=sharing">
+                Open the Toolkit
+            </Button>
+          </Box>
         </Box>
       </Container>
     </>
