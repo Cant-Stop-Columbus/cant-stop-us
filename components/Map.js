@@ -12,8 +12,8 @@ const geoUrl =
 "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";;
 
 const markers = [
-  { markerOffset: 15, name: "Columbus", coordinates: [-82.9988, 39.9612] },
-  { markerOffset: 15, name: "Dayton", coordinates: [-84.1916, 39.7589] }
+  { markerOffset: -25, name: "Columbus", coordinates: [-82.9988, 39.9612] },
+  { markerOffset: 10, name: "Dayton", coordinates: [-84.1916, 39.7589] }
 ];
 
 const Map = () => {
@@ -21,21 +21,22 @@ const Map = () => {
     <ComposableMap
       projection="geoAlbers"
       projectionConfig={{
-        rotate: [97, 0, 3],
+        rotate: [98, 0,2],
         scale: 1050
       }}
+      style={{backgroundColor:"#F5F5F5", borderRadius:"10px"}}
     >
       <ZoomableGroup zoom={1}>
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies
-              // .filter(d => d.properties.REGION_UN === "Americas")
+              // .filter()
               .map(geo => (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill="#EAEAEC"
-                  stroke="#D6D6DA"
+                  fill="#D0D0D0"
+                  stroke="#F5F5F5"
                 />
               ))
           }
