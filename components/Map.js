@@ -5,6 +5,7 @@ import {
   Geography,
   Marker
 } from "react-simple-maps";
+import theme from '../src/theme';
 
 const geoUrl =
 "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";;
@@ -41,7 +42,7 @@ const Map = () => {
         <Marker key={name} coordinates={coordinates}>
           <g
             fill="none"
-            stroke="#FF5533"
+            stroke={theme.palette.primary.main}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
