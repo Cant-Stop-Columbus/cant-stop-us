@@ -22,8 +22,8 @@ const Meta = (props) => (
     <meta name="twitter:creator" content="@cantstopcbus" />
     {props.image && <meta name="twitter:image" content={`${props.image}`} /> }
 
-    <link rel="icon" type="image/png" href="/public/favicon.ico" />
-    <link rel="apple-touch-icon" href="/public/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     {/* PWA primary color */}
