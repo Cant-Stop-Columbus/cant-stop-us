@@ -1,7 +1,7 @@
 // 'App' initializes pages. We override it here to control initialization
 import React from 'react';
+import Meta from '../components/Meta'
 import PropTypes from 'prop-types';
-import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/theme';
@@ -24,11 +24,8 @@ export default function MyApp(props) {
 
   return (
     <React.Fragment>
-      <Head>
-        <title>Can't Stop Us</title>
-        <link rel="shortcut icon" href="/static/favicon.ico" />
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-      </Head>
+      {/* Default configuration for meta tags */}
+      <Meta/>
 
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

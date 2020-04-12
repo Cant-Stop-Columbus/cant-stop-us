@@ -9,7 +9,7 @@ export default function Index() {
   return (
     <>
       <Header/>
-      <Container maxWidth="lg">
+      <Container maxWidth="md">
         <Box mt={2}>
           <Typography variant="h4" align="center">
             Can't Stop Us Toolkit
