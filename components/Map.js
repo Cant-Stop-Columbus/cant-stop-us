@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   ComposableMap,
   Geographies,
@@ -12,11 +12,11 @@ const geoUrl =
 "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";;
 
 const markers = [
-  { markerOffset: -25, name: "Columbus", coordinates: [-82.9988, 39.9612] },
-  { markerOffset: 10, name: "Dayton", coordinates: [-84.1916, 39.7589] }
+  { markerOffset: -25, name: "Columbus", coordinates: [-82.9988, 39.9612], url: "https://cantstopcolumbus.com" },
+  { markerOffset: 10, name: "Dayton", coordinates: [-84.1916, 39.7589], url: "https://cantstopdyt.com" }
 ];
 
-const Map = () => {
+const Map = ({ setTooltipContent }) => {
   return (
     <ComposableMap
       projection="geoAlbers"
@@ -41,26 +41,26 @@ const Map = () => {
               ))
           }
         </Geographies>
-        {markers.map(({ name, coordinates, markerOffset }) => (
-          <Marker key={name} coordinates={coordinates}>
+        {markers.map(({ name, coordinates, url }) => (
+          <Marker 
+            key={name} 
+            coordinates={coordinates}
+            onMouseEnter={() => {
+              setTooltipContent(`${name}<br/><a href="${url}" alt="${name}" class="a-white" rel="noopener noreferrer" target="_blank">${url}</a>`);
+            }}
+            data-tip=''
+          >
             <g
-              fill="none"
+              fill="#D0D0D0"
               stroke={theme.palette.primary.main}
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
               transform="translate(-12, -24)"
             >
-              <circle cx="12" cy="10" r="3" />
               <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
+              <circle cx="12" cy="10" r="3" />
             </g>
-            <text
-              textAnchor="middle"
-              y={markerOffset}
-              style={{ fontFamily: "system-ui", fill: "#404040" }}
-            >
-              {name}
-            </text>
           </Marker>
         ))}
       </ZoomableGroup>
@@ -68,4 +68,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default memo(Map);

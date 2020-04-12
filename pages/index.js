@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+import ReactTooltip from "react-tooltip";
 import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
@@ -8,6 +10,7 @@ import Map from '../components/Map'
 import Meta from '../components/Meta'
 
 export default function Index() {
+  const [content, setContent] = useState("");
   return (
     <>
       <Meta/>
@@ -21,7 +24,8 @@ export default function Index() {
             Can’t Stop Us is community-focused nationwide movement that activates our unique talents and compassion to solve real problems. We embrace courageous ideas and rapidly deliver new and innovative solutions.
           </Typography>
           <Container maxWidth="sm">
-            <Map />
+            <Map setTooltipContent={setContent} />
+            <ReactTooltip html={true} effect="solid" delayHide={2000} delayUpdate={2000}>{content}</ReactTooltip>
           </Container>
           <Box align="center" mt={2}>
             <Button variant="contained" color="primary" component={Link} href="/toolkit">

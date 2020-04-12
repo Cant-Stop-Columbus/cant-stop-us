@@ -1,12 +1,12 @@
 // 'App' initializes pages. We override it here to control initialization
 import React from 'react';
-import Meta from '../components/Meta'
 import PropTypes from 'prop-types';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/theme';
 import * as gtag from '../lib/gtag'
 import Router from 'next/dist/next-server/server/router';
+import '../src/styles.css'
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
