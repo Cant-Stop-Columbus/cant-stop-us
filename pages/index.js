@@ -8,6 +8,7 @@ import Link from '@material-ui/core/Link'
 import Header from '../components/Header';
 import Footer from '../components/Footer'
 import Map from '../components/Map'
+import CaseStudy from '../components/CaseStudy'
 import Meta from '../components/Meta'
 
 export default function Index() {
@@ -34,6 +35,7 @@ export default function Index() {
             </Button>
           </Box>
         </Box>
+        <CaseStudy/>
         <Footer/>
       </Container>
     </>
