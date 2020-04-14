@@ -34,7 +34,7 @@ export default function Index() {
             <b>To provide</b>  a structure for creating a movement by sharing tools, insights, successes, and failures
           </Typography>
           <Box align="center" mt={2}>
-            <Button variant="contained" color="primary" component={Link} href="https://docs.google.com/document/d/1H72twsb5stdXdGf3Gl0oO7fsPYhU9ZLKEr1-jQiX2iU/edit?usp=sharing">
+            <Button variant="contained" color="primary" component={Link} href="https://docs.google.com/document/d/13jlBXUNKv5HmLuMWq03ONz7Au2S4IXDk2EJyznbqHbc/edit?usp=sharing">
                 Open the Toolkit
             </Button>
           </Box>
