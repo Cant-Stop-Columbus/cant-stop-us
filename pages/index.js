@@ -10,9 +10,15 @@ import Footer from '../components/Footer'
 import Map from '../components/Map'
 import CaseStudy from '../components/CaseStudy'
 import Meta from '../components/Meta'
+import CityDisplayCards from '../components/CityDisplayCards'
 
 export default function Index() {
   const [content, setContent] = useState("");
+  const markers = [
+    { markerOffset: -25, name: "Columbus, OH", coordinates: [-82.9988, 39.9612], url: "https://cantstopcolumbus.com" },
+    { markerOffset: 10, name: "Dayton, OH", coordinates: [-84.1916, 39.7589], url: "https://cantstopdyt.com" }
+  ];
+
   return (
     <>
       <Meta/>
@@ -26,9 +32,10 @@ export default function Index() {
             Can’t Stop Us is community-focused nationwide movement that activates our unique talents and compassion to solve real problems. We embrace courageous ideas and rapidly deliver new and innovative solutions.
           </Typography>
           <Container maxWidth="sm">
-            <Map setTooltipContent={setContent} />
+            <Map setTooltipContent={setContent} markers={markers} />
             <ReactTooltip html={true} effect="solid" delayHide={2000} delayUpdate={2000}>{content}</ReactTooltip>
           </Container>
+          <CityDisplayCards cities={markers} />
           <Box align="center" mt={2}>
             <Button variant="contained" color="primary" component={Link} href="/toolkit">
               Get Started in Your City

@@ -11,12 +11,7 @@ import theme from '../src/theme';
 const geoUrl =
 "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";;
 
-const markers = [
-  { markerOffset: -25, name: "Columbus", coordinates: [-82.9988, 39.9612], url: "https://cantstopcolumbus.com" },
-  { markerOffset: 10, name: "Dayton", coordinates: [-84.1916, 39.7589], url: "https://cantstopdyt.com" }
-];
-
-const Map = ({ setTooltipContent }) => {
+const Map = ({ setTooltipContent, markers }) => {
   return (
     <ComposableMap
       projection="geoAlbers"
