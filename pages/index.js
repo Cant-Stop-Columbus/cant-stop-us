@@ -11,6 +11,7 @@ import Map from '../components/Map'
 import CaseStudy from '../components/CaseStudy'
 import Meta from '../components/Meta'
 import CityDisplayCards from '../components/CityDisplayCards'
+import MailingListSignup from '../components/MailingListSignup'
 
 export default function Index() {
   const [content, setContent] = useState("");
@@ -40,6 +41,9 @@ export default function Index() {
             <Button variant="contained" color="primary" component={Link} href="/toolkit">
               Get Started in Your City
             </Button>
+          </Box>
+          <Box align="center" mt={2}>
+            <MailingListSignup />
           </Box>
         </Box>
         <CaseStudy/>
